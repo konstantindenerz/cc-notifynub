@@ -43,22 +43,16 @@ if [[ $1 == "--render" ]]; then
   # Enter -> jump to window, q -> close, others ignored
   jump() { tmux select-window -t ":$win_idx"; exit 0; }
 
-  if [[ $state == "permission" ]]; then
-    while true; do
-      read -rsn1 k
-      [[ $k == "" ]] && jump
-      [[ $k == "q" ]] && exit 0
-    done
-  else
-    deadline=$(( SECONDS + 5 ))
-    while (( SECONDS < deadline )); do
-      remaining=$(( deadline - SECONDS ))
-      (( remaining < 1 )) && remaining=1
-      read -t "$remaining" -rsn1 k || exit 0
-      [[ $k == "" ]] && jump
-      [[ $k == "q" ]] && exit 0
-    done
-  fi
+  [[ $state == "permission" ]] && timeout=10 || timeout=5
+
+  deadline=$(( SECONDS + timeout ))
+  while (( SECONDS < deadline )); do
+    remaining=$(( deadline - SECONDS ))
+    (( remaining < 1 )) && remaining=1
+    read -t "$remaining" -rsn1 k || exit 0
+    [[ $k == "" ]] && jump
+    [[ $k == "q" ]] && exit 0
+  done
   exit 0
 fi
 

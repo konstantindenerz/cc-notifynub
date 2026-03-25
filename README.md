@@ -16,7 +16,7 @@ Shows a small tmux popup (top-right corner) when Claude Code finishes a task or 
 | State | Eyes | Trigger | Behavior |
 |---|---|---|---|
 | done | `▲ ▲` | Claude finished | Auto-closes after 5s |
-| permission | `▓ ▓` | Tool approval needed | Stays open until dismissed |
+| permission | `▓ ▓` | Tool approval needed | Auto-closes after 10s |
 | idle | `▒ ▒` | Default | — |
 
 Outside tmux, falls back to macOS system notifications.
