@@ -27,7 +27,7 @@ Outside tmux, falls back to macOS system notifications.
 
 ```sh
 /plugin marketplace add konstantindenerz/cc-notifynub
-/plugin install cc-notifynub
+/plugin install cc-notifynub@cc-notifynub
 ```
 
 ### Manual
