@@ -1,0 +1,14 @@
+{
+  "name": "konstantindenerz-plugins",
+  "owner": {
+    "name": "Konstantin Denerz"
+  },
+  "plugins": [
+    {
+      "name": "cc-notifynub",
+      "source": "./",
+      "description": "tmux popup notifications with a pixel-art mascot for Claude Code",
+      "version": "1.0.0"
+    }
+  ]
+}
