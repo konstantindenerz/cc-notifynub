@@ -1,11 +1,11 @@
 {
-  "name": "claude-notifynub",
+  "name": "cc-notifynub",
   "version": "1.0.0",
   "description": "tmux popup notifications with a pixel-art mascot for Claude Code",
   "author": {
     "name": "Konstantin Denerz"
   },
-  "repository": "https://github.com/konstantindenerz/claude-notifynub",
+  "repository": "https://github.com/konstantindenerz/cc-notifynub",
   "license": "MIT",
   "keywords": ["tmux", "notification", "hooks", "popup"]
 }

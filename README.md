@@ -1,4 +1,4 @@
-# claude-notifynub
+# cc-notifynub
 
 tmux popup notifications with a pixel-art mascot for Claude Code.
 
@@ -26,8 +26,8 @@ Outside tmux, falls back to macOS system notifications.
 ### As a plugin
 
 ```sh
-/plugin marketplace add konstantindenerz/claude-notifynub
-/plugin install claude-notifynub
+/plugin marketplace add konstantindenerz/cc-notifynub
+/plugin install cc-notifynub
 ```
 
 ### Manual
