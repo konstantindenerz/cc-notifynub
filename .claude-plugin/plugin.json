@@ -1,6 +1,6 @@
 {
   "name": "cc-notifynub",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "tmux popup notifications with a pixel-art mascot for Claude Code",
   "author": {
     "name": "Konstantin Denerz"
