@@ -1,8 +1,5 @@
 {
-  "name": "konstantindenerz-plugins",
-  "owner": {
-    "name": "Konstantin Denerz"
-  },
+  "name": "cc-notifynub",
   "plugins": [
     {
       "name": "cc-notifynub",
